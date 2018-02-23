@@ -16,7 +16,7 @@ import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
 
 import {AuthService} from './services/auth/auth.service'
 
-import {DropdownModule,AlertModule} from 'ng2-bootstrap'
+import {BsDropdownModule,AlertModule} from 'ng2-bootstrap'
 
 import { CKEditorModule } from 'ng2-ckeditor';
 // import { HTTP_PROVIDERS } from 'angular2/http';
@@ -59,7 +59,7 @@ const myFirebaseAuthConfig = {
 		SignupModule,
 		DashboardModule,
 		SharedModule.forRoot(),
-		DropdownModule.forRoot(),
+		BsDropdownModule.forRoot(),
 		AlertModule.forRoot(),
 	    AngularFireModule.initializeApp(firebaseConfig, myFirebaseAuthConfig),
 	    DataTableModule,

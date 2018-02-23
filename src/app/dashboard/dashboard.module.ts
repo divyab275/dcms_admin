@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { DropdownModule } from 'ng2-bootstrap';
+import { BsDropdownModule } from 'ng2-bootstrap';
 import { ModalModule } from 'ng2-bootstrap';
 
 import { HomeModule } from './home/home.module';
@@ -46,7 +46,7 @@ const myFirebaseAuthConfig = {
         FormsModule,
         CommonModule,
     	RouterModule,
-    	DropdownModule,
+    	BsDropdownModule,
         ModalModule,
     	HomeModule,
         TableModule,
