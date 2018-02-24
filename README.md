@@ -29,3 +29,29 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Notes 
+- While running ```ng build``` if the following error occurs, follow the steps to get rid of it.
+> ERROR in Error: DataTableModule is not an NgModule
+1. go to ```node_modules/angular-2-data-table-bootstrap4/dist/index.d.ts``` 
+2. add the following lines: 
+    > import {NgModule} from '@angular/core'
+    > @NgModule({}) export declare class DataTableModule {
+    > }
+3. This is how the file looks like after update
+    ```
+    import {NgModule} from '@angular/core'
+    import { DataTable } from './components/table.component';
+    import { DataTableColumn } from './components/column.component';
+    import { DataTableRow } from './components/row.component';
+    import { DataTablePagination } from './components/pagination.component';
+    import { DataTableHeader } from './components/header.component';
+    export * from './components/types';
+    export * from './tools/data-table-resource';
+    export { DataTable, DataTableColumn, DataTableRow, DataTablePagination, DataTableHeader };
+    export declare const DATA_TABLE_DIRECTIVES: (typeof DataTable | typeof DataTableColumn)[];
+    @NgModule({}) export declare class DataTableModule {
+    }
+    ```    
+
+
