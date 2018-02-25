@@ -35,11 +35,11 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 > ERROR in Error: DataTableModule is not an NgModule
 1. go to ```node_modules/angular-2-data-table-bootstrap4/dist/index.d.ts``` 
 2. add the following lines: 
-    > import {NgModule} from '@angular/core'
-
-    > @NgModule({}) export declare class DataTableModule {
-        
-    > }
+    ```
+    import {NgModule} from '@angular/core'
+    @NgModule({}) export declare class DataTableModule {
+    }
+    ```
 3. This is how the file looks like after update
     ```
     import {NgModule} from '@angular/core'
@@ -54,6 +54,10 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
     export declare const DATA_TABLE_DIRECTIVES: (typeof DataTable | typeof DataTableColumn)[];
     @NgModule({}) export declare class DataTableModule {
     }
-    ```    
+    ```   
+
+- ```src/app/app.module.ts``` contains configuration for firebase. Update the firebaseConfig object to suit your needs.
+
+ 
 
 

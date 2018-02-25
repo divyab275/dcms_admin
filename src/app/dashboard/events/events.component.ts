@@ -2,9 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {EventService} from '../../services/event/event.service';
 import {UserService} from '../../services/user.service';
 import { DataTableResource } from 'angular-2-data-table-bootstrap4';
-
+// import * as eventDetails from '../../../../event_details.json';
 import * as Promise from 'bluebird';
 
+// console.log(eventDetails.EVENT_CATEGORIES)
+// let eventDetails = require('../../../../event_detials.json');
 @Component({
     selector: 'app-events',
     templateUrl: './events.component.html',
@@ -17,18 +19,12 @@ export class EventsComponent{
     event = null;
     eventAdmin = null;
     category = {
-        'ORIGINALS': 'Drishti Originals',
-        'COMECON': 'Comecon',
-        'GAMING': 'Gaming',
-        'ONLINE': 'Online',
-        'GEN': 'General',
-        'CIVIL' : 'Civil',
-        'AR' : 'Architecture',
-        'EE' : 'Electrical',
-        'EC' : 'Electronics',
-        'ME': 'Mechanical',
-        'CS': 'Computer Science',
-        'ROBO': 'Robotics'
+        'ANT': "Antara",
+        'DIO': 'Dionysia',
+        'KHE': 'Khelotsav',
+        'NAD': 'Nadanta',
+        'CD': 'Carpe Dictum',
+        'MISC': 'Miscelaneo'
     };
     categoryArray = Object.keys(this.category).map(key => {
         return [key, this.category[key]];

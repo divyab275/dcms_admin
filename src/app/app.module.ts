@@ -35,12 +35,13 @@ import {VolunteerService} from './services/volunteer/volunteer.service';
 import {DataTableModule} from 'angular-2-data-table-bootstrap4';
 
 
+// firebase config
 export const firebaseConfig = {
-	apiKey: 'AIzaSyCvN9K2cdfUf4H8BIr8vqRhdtGV_ca2UIs',
-    authDomain: 'drishti-bd782.firebaseapp.com',
+	apiKey: 'AIzaSyAcc11rgCRK5Ygd1WpFX556Sn36HGCI-hA',
+	authDomain: 'dhwani18-8b03f.firebaseapp.com',
     databaseURL: 'https://drishti-bd782.firebaseio.com',
     storageBucket: 'drishti-bd782.appspot.com',
-    messagingSenderId: '37494669483',
+	messagingSenderId: '866486690145',
 };
 
 const myFirebaseAuthConfig = {
