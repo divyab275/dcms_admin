@@ -36,7 +36,9 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 1. go to ```node_modules/angular-2-data-table-bootstrap4/dist/index.d.ts``` 
 2. add the following lines: 
     > import {NgModule} from '@angular/core'
+
     > @NgModule({}) export declare class DataTableModule {
+        
     > }
 3. This is how the file looks like after update
     ```
