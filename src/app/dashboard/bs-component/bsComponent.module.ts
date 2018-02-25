@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import {
 		AlertModule,
 		ButtonsModule,
-		DropdownModule,
+		BsDropdownModule,
 		PaginationModule,
 		ProgressbarModule,
 		RatingModule,
@@ -26,7 +26,7 @@ import { BSComponentComponent } from './bsComponent.component';
 		CommonModule,
 		AlertModule,
 		ButtonsModule,
-		DropdownModule,
+		BsDropdownModule,
 		PaginationModule.forRoot(),
 		ProgressbarModule.forRoot(),
 		RatingModule.forRoot(),
