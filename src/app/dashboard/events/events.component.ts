@@ -24,7 +24,7 @@ export class EventsComponent{
         'KHE': 'Khelotsav',
         'NAD': 'Nadanta',
         'CD': 'Carpe Dictum',
-        'MISC': 'Miscelaneo'
+        'MIS': 'Miscelaneo'
     };
     categoryArray = Object.keys(this.category).map(key => {
         return [key, this.category[key]];
