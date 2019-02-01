@@ -37,12 +37,14 @@ import {DataTableModule} from 'angular-2-data-table-bootstrap4';
 
 // firebase config
 export const firebaseConfig = {
-	apiKey: 'AIzaSyAcc11rgCRK5Ygd1WpFX556Sn36HGCI-hA',
-	authDomain: 'dhwani18-8b03f.firebaseapp.com',
-    databaseURL: 'https://drishti-bd782.firebaseio.com',
-    storageBucket: 'drishti-bd782.appspot.com',
-	messagingSenderId: '866486690145',
+	
+	apiKey: "AIzaSyCr1tUZ4sGglBsQbRKn1m5klzhiV-IlCLs",
+    authDomain: "dhwanicet-7466c.firebaseapp.com",
+    databaseURL: "https://dhwanicet-7466c.firebaseio.com",
+    storageBucket: "dhwanicet-7466c.appspot.com",
+    messagingSenderId: "1056048590412"
 };
+
 
 const myFirebaseAuthConfig = {
   provider: AuthProviders.Google,

@@ -119,6 +119,7 @@ export class EventsComponent{
             promise = new Promise((res, rej) => res());
         }
         promise.then((res) => {
+            console.log("res is :"+res);
             if (this.event.id)
                 return 	this.eventService.updateEvent(this.event);
             else
