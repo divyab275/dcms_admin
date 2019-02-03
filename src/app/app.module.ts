@@ -65,7 +65,7 @@ const myFirebaseAuthConfig = {
 		BsDropdownModule.forRoot(),
 		AlertModule.forRoot(),
 	    AngularFireModule.initializeApp(firebaseConfig, myFirebaseAuthConfig),
-	    DataTableModule,
+	    
 	    CKEditorModule
 	],
 	declarations: [AppComponent],
